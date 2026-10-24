@@ -1,0 +1,32 @@
+{
+  "name": "hcm-lite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HCM Lite - AI-assisted Human Capital Management (Next.js + Supabase)",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\"",
+    "db:sql": "node scripts/export-schema.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.11",
+    "@mediapipe/tasks-vision": "0.10.35",
+    "bcryptjs": "^3.0.3",
+    "csv-parse": "^5.6.0",
+    "jose": "^6.2.13",
+    "lucide-react": "^1.61.0",
+    "next": "^15.5.28",
+    "pdfkit": "^0.17.2",
+    "postgres": "^3.4.9",
+    "react": "^19.1.10",
+    "react-dom": "^19.1.10",
+    "recharts": "^2.15.4",
+    "zod": "^3.25.76"
+  }
+}
